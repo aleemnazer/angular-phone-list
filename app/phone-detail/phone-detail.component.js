@@ -8,7 +8,12 @@ angular.
 
         $http.get('phones/' + $routeParams.phoneId + '.json').then(function(response) {
           self.phone = response.data;
+          self.setMainImg(self.phone.images[0]);
         });
+        
+        self.setMainImg = function setMainImg(img){
+          self.mainImage = img;
+        }
       }
     ]
   });

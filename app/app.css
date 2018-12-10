@@ -70,9 +70,23 @@ body {
  .phone-thumbs li {
   background-color: white;
   border: 1px solid black;
+  cursor: pointer;
   display: inline-block;
   margin: 1em;
 }
+
+.phone:first-child {
+  display: block;
+}
+ .phone-images {
+  background-color: white;
+  float: left;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+}
+
  .specs {
   clear: both;
   list-style: none;
